@@ -69,28 +69,29 @@ $(document).ready(function(){
     }
 
     function get_cloud(){
-     $("#vis").empty();
-      $.ajax({
-        url: "/anchors/"+viewModel.selectedLanguage()+"/"+viewModel.selectedDomain(),
-        dataType: "json"
-      })
-        .done(function( data ) {
-          <!--var ratio = sideSize/((parseInt(data[0].count)-parseInt(data[data.length].count));-->
-          var max = data[0].count;
-          var median = data[~~(data.length/2-1)].count;
-          var min = data[data.length-1].count;
-          var ratio = sideSize/(max-min);
-          d3.layout.cloud().size([sideSize, sideSize])
-              .words(data.map(function(d) {
-                return {text: d.anchor, size: ratio*(d.count-min)};
-              }))
-              .padding(5)
-              .rotate(function() { return ~~(Math.random() * 2) * 60; })
-              .font("Impact")
-              .fontSize(function(d) { return d.size; })
-              .on("end", draw)
-              .start();
-        console.log("Finished loading anchors", data);
-      });
-    }
+        viewModel.reviews([]);
+        $("#vis").empty();
+         $.ajax({
+           url: "/anchors/"+viewModel.selectedLanguage()+"/"+viewModel.selectedDomain(),
+           dataType: "json"
+         })
+           .done(function( data ) {
+             <!--var ratio = sideSize/((parseInt(data[0].count)-parseInt(data[data.length].count));-->
+             var max = data[0].count;
+             var median = data[~~(data.length/2-1)].count;
+             var min = data[data.length-1].count;
+             var ratio = sideSize/(max-min);
+             d3.layout.cloud().size([sideSize, sideSize])
+                 .words(data.map(function(d) {
+                   return {text: d.anchor, size: ratio*(d.count-min)};
+                 }))
+                 .padding(5)
+                 .rotate(function() { return ~~(Math.random() * 2) * 60; })
+                 .font("Impact")
+                 .fontSize(function(d) { return d.size; })
+                 .on("end", draw)
+                 .start();
+           console.log("Finished loading anchors", data);
+         });
+           }
 });
