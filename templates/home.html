@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+</meta>
+<body>
+<div id="header">
+  <div class="wrapper"> Simple demo of the resources</div>
+</div>
+<div class="wrapper">
+  <div id="left-bar">
+    <select data-bind="options: domains, value: selectedDomain"></select>
+    <select data-bind="options: languages, value: selectedLanguage"></select>
+    <div id="vis"></div>
+  </div>
+  <div id="results">
+    <table class="newspaper-a">
+        <thead>
+            <tr><th>Review</th><th>Polarity</th></tr>
+        </thead>
+        <tbody data-bind="foreach: reviews">
+            <tr>
+                <td data-bind="text: string"></td>
+                <td data-bind="text: polarityValue"></td>
+            </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+<div class="modal"><!-- Place at bottom of page --></div>
+<script src="{{ url_for('static', filename='js/jquery-2.1.1.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/d3.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/d3.layout.cloud.js')}}"></script>
+<script src="{{ url_for('static', filename='js/knockout-3.1.0.js')}}"></script>
+<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}"></style>
+</body>
