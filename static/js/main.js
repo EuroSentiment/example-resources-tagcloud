@@ -93,5 +93,5 @@ $(document).ready(function(){
                  .start();
            console.log("Finished loading anchors", data);
          });
-           }
+   }
 });

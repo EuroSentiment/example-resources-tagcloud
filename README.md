@@ -10,6 +10,14 @@ You can see it working here:
 
 [DEMO on Heroku](http://eurosentiment-resources.herokuapp.com)
 
+If you want to deploy your own copy, make sure you set your token and endpoint via ``config.py``,``.env`` (for Heroku) or setting your variables:
+
+Example .env file:
+```
+TOKEN=<your token goes here>
+RESOURCES_ENDPOINT=http://54.201.101.125/sparql/
+```
+
 Acknowledgement
 ---------------
 EUROSENTIMENT PROJECT
@@ -17,5 +25,5 @@ Grant Agreement no: 296277
 Starting date: 01/09/2012
 Project duration: 24 months
 
-![Eurosentiment Logo](logo_grande.png)
+![Eurosentiment Logo](https://avatars2.githubusercontent.com/u/2904232?s=100)
 ![FP7 logo](logo_fp7.gif)
