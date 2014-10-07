@@ -70,25 +70,24 @@ GET_SENTIMENTS = '''\
 
 CORPORA = {
     "es": {
-        "hotel": "http://www.eurosentiment.eu/dataset/hotel/es/gabvul/19/corpus",
-        "electronics": "http://www.eurosentiment.eu/dataset/electronics/es/gabvul/15/corpus"
+        "hotel": "http://www.eurosentiment.eu/dataset/hotel/es/paradigma/0019/corpus",
+        "electronics": "http://www.eurosentiment.eu/dataset/electronics/es/paradigma/0015/corpus"
     },
     "en": {
-        "hotel": "http://www.eurosentiment.eu/dataset/hotel/en/gabvul/18/corpus",
-        "electronics": "http://www.eurosentiment.eu/dataset/electronics/en/gabvul/14/corpus"
+        "hotel": "http://www.eurosentiment.eu/dataset/electronics/en/paradigma/0014/corpus",
+        "electronics": "http://www.eurosentiment.eu/dataset/hotel/en/paradigma/0018/corpus"
     }
 }
 
 LEXICA = {
     "es": {
-        "hotel": "http://www.eurosentiment.eu/dataset/hotel/es/gabvul/9/lexicon",
-        "electronics": "http://www.eurosentiment.eu/dataset/hotel/es/gabvul/3/lexicon"
+        "hotel": "http://www.eurosentiment.eu/dataset/hotel/es/paradigma/0019/lexicon",
+        "electronics": "http://www.eurosentiment.eu/dataset/electronics/es/paradigma/0015/lexicon"
     },
     "en": {
-        "hotel": "http://www.eurosentiment.eu/dataset/hotel/es/gabvul/8/lexicon",
-        "electronics": "http://www.eurosentiment.eu/dataset/hotel/es/gabvul/2/lexicon"
+        "hotel": "http://www.eurosentiment.eu/dataset/electronics/en/paradigma/0014/lexicon",
+        "electronics": "http://www.eurosentiment.eu/dataset/hotel/en/paradigma/0018/lexicon"
     }
-
 }
 
 
