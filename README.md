@@ -5,7 +5,7 @@ This is a simple application that uses both lexica and corpora in the EUROSENTIM
 
 Although this application does not show the full potential of the portal, it can get you started with building your own service or application.
 
-It is built using Flask and Request, and can be easily deployed to a PaaS such as Heroky.
+It is built using Flask and Request, and can be easily deployed to a PaaS such as Heroku.
 You can see it working here:
 
 [DEMO on Heroku](http://eurosentiment-resources.herokuapp.com)
