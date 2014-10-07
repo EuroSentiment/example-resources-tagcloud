@@ -1,5 +1,5 @@
 ![GSI Logo](http://gsi.dit.upm.es/templates/jgsi/images/logo.png)
-[EUROSENTIMETN Reviews Cloud And Explore](http://eurosentiment-resources.herokuapp.com) 
+[EUROSENTIMENT Reviews Cloud And Explore](http://eurosentiment-resources.herokuapp.com) 
 =========================================
 This is a simple application that uses both lexica and corpora in the EUROSENTIMENT portal to show reviews and their associated keywords.
 
